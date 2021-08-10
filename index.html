@@ -116,7 +116,15 @@
             <div class="row mb-3 pt-2">
                 <div class="col-md-8 mx-auto">
                     <div class="row no-gutters pb-2">
-                        <p> <b>1. Attention Maps on Audioset Inputs. </b>  </p>
+                        </br>
+                        </br>
+                        <p> <b>1. Attention Maps on Audioset Inputs.</b> We compute maps of the attention from the output
+CLS tokens to the RGB image input space for a vanilla self-attention model and MBT. For each
+video clip, we show the original middle frame on the left with the ground truth labels overlayed at
+the bottom. The attention is particularly focused on sound source regions in the video that contain
+motion, eg. the fingertips on the piano, the hands on the string instrument, faces of humans. The
+bottlenecks in MBT further force the attention to be localised to smaller regions of the images (i.e the
+mouth of the baby on the top left and the mouth of the woman singing on the bottom right). For cases where the sounding object is localised to a narrow region of the image clearly (bottom row), the differences between vanilla fusion and MBT are less apparent. </p>
                        <span></span><img src="rgb_visualisations.png" class="center">
            
                         </br> 
