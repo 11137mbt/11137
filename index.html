@@ -12,6 +12,10 @@
     <meta name="author" content="xyz">
 </head>
     <style>
+        .image-container {
+  display: flex;
+  justify-content: center;
+}
         /* greek-ext */
         @font-face {
             font-family: 'Roboto';
@@ -125,7 +129,9 @@ the bottom. The attention is particularly focused on sound source regions in the
 motion, eg. the fingertips on the piano, the hands on the string instrument, faces of humans. The
 bottlenecks in MBT further force the attention to be localised to smaller regions of the images (i.e the
 mouth of the baby on the top left and the mouth of the woman singing on the bottom right). For cases where the sounding object is localised to a narrow region of the image clearly (bottom row), the differences between vanilla fusion and MBT are less apparent. </p>
-                       <span></span><img src="rgb_visualisations.png" class="center">
+                       <div class="image-container">
+                        <img src="rgb_visualisations.png" />
+                       </div>
            
                         </br> 
                         </br> 
